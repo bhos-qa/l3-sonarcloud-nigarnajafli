@@ -3,7 +3,7 @@ on:
   push:
     branches: ["develop"]
   pull_request:
-    types: ["develop"]
+    branches: ["develop"]
 jobs:
   build:
     name: Build
