@@ -40,14 +40,6 @@ jobs:
           chmod +x gradlew
           ./gradlew test
 
-      - name: Test Report
-        uses: dorny/test-reporter@v1
-        if: success() || failure()
-        with:
-          name: Junit Tests
-          path: build/test-results/test/TEST*.xml
-          reporter: java-junit
-
   sonar:
     runs-on: ubuntu-latest
 
