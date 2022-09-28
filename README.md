@@ -1,1 +1,1 @@
-### This repository can create code coverage report. See SonarCloud
+### This repository can create code coverage report. See SonarCloud.
