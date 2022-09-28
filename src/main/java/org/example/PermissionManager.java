@@ -8,14 +8,10 @@ public class PermissionManager {
     }
 
     public String get() {
-        switch (this.mCurrentLevel) {
-            case USER:
-                return "USER";
-            case DEVELOPER:
-                return "DEVELOPER";
-            case ADMIN:
-                return "ADMIN";
-        }
-        return null;
+        return switch (this.mCurrentLevel) {
+            case USER -> "USER";
+            case DEVELOPER -> "DEVELOPER";
+            case ADMIN -> "ADMIN";
+        };
     }
 }
